@@ -1,5 +1,5 @@
 function Label = DDC(X,k,lambda,c)
-% Written by Ruijia Li (ruijia2017@163.com), UESTC, June 1, 2021.
+% Written by Ruijia Li (ruijia2017@163.com), UESTC, January 1, 2022.
 
 %% Input
 % X: data matrix (numSamp x dimSamp, dimSamp is the dimension)
@@ -18,7 +18,7 @@ function Label = DDC(X,k,lambda,c)
 %% Built the density decreased chain
 [DDC,DPS,LDCD] = DensityDecreasedChain(W,D,LDC); 
 
-%% Identify Core Points
+%% Identify core points
 [BP,CP] = IdentifyCorePoint(DPS,LDC,D,lambda);  
 
 %% Mine subclusters in the core points
