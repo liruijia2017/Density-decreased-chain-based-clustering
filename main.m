@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                         
 % The code for testing the algorithm DDC on eight real-world datasets.
-% Written by Ruijia Li (ruijia2017@163.com), UESTC, June 1, 2021.
+% Written by Ruijia Li (ruijia2017@163.com), UESTC, January 1, 2022.
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear; close all; clc; addpath(genpath(pwd));                       
