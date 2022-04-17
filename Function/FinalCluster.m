@@ -31,9 +31,6 @@ while Length
     end
     UnLabelPoint = find(PartLabel==0);
     Length = length(UnLabelPoint);
-    if c == 0
-        Length = 0;
-    end
 end
 
 %% Specify c as the number of clusters.
