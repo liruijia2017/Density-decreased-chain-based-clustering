@@ -93,5 +93,11 @@ if c < m
    end    
 end 
 
+%% Organize labels
+ID = unique(nonzeros(PartLabel));
+cc = min(length(ID),c);
+for i = 1:cc
+    PartLabel(PartLabel==ID(i)) = i;
+end
 Label = PartLabel;
     
