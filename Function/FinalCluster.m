@@ -8,8 +8,7 @@ function Label = FinalCluster(Distance,DDC,PartLabel,LDCD,subClusterID,LDC,c)
 % LDC: local density centers
 % c: number of the clusters 
 %% Output
-% PartLabel: label for initial subclusters  
-% subClusterID: index for initial subclusters  
+% Label: label for final clusters  
 
 m = max(PartLabel);
 %% Label the remaining points
@@ -94,11 +93,5 @@ if c < m
    end    
 end 
 
-%% Organize labels
-ID = unique(nonzeros(PartLabel));
-cc = min(length(ID),c);
-for i = 1:cc
-    PartLabel(PartLabel==ID(i)) = i;
-end
 Label = PartLabel;
     
